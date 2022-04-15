@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Uau! Site</title>
+    <style>
+	body { margin: 0px; height: 100vh }
+	.container {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    text: Comic Sans;
+	    align-items: center;
+	    height: 100%;
+	    padding: 0px;
+	    color: white;
+            background: linear-gradient(350deg, #fffc8a 25%, #ff9a00 75%);
+	}
+	.kokoro {
+	    font-size: 2.2rem;
+	    text-decoration: none;
+	    color: white;
+	    cursor: pointer;
+	    transition: transform .5s;
+	}
+	.kokoro:hover { transform: scale(1.5) rotate(360deg); }
+    </style>
+    <script>
+	function coracaoClick() {
+	    document.getElementById("gif").style.display = "block";
+	    document.getElementById("peq").innerHTML = "Você sofrerá a ira do Kirby dançarino";
+	}
+    </script>
+</head>
+<body>
+    <div class="container" align="center">
+	<h1 id="coracao"><i>
+	    Você viu :o
+	    <br>
+	    Obrigado amigo, você é um amigo!
+	</i></h1>
+	<div class="kokoro" onclick="coracaoClick()">❤</div>
+	<small id="peq">não clique no coração</small>
+	<div id="gif" class="video" style="display: none; margin-top: 30px">
+	    <img src="https://cdn.betterttv.net/emote/5c3a9d8bbaa7ba09c9cfca37/2x.gif"/>
+	</div>
+    </div>
+</body>
+</html>
